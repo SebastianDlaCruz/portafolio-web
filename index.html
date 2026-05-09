@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ==============================================
+         Metadatos para SEO Básico (Google, Bing, etc.)
+         ============================================== -->
+  <title>Sebastián de la Cruz - Desarrollador Frontend</title>
+  <meta name="description"
+    content="Portafolio web de Sebastián de la Cruz, Desarrollador Frontend especializado en Angular y React, con experiencia sólida en Node.js y NestJS.">
+  <meta name="author" content="Sebastián de la Cruz">
+  <meta name="keywords" content="Desarrollador Frontend, TypeScript, JavaScript, Angular, React, Node, Web, Portafolio">
+
+  <!-- ==============================================
+         Open Graph: Facebook, WhatsApp, Instagram, LinkedIn, Discord
+         ============================================== -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sebastián de la Cruz | Desarrollador Frontend">
+  <meta property="og:description"
+    content="Especialista en frontend con Angular y React, y en backend con NestJS. Creador de soluciones escalables, accesibles y bien estructuradas.">
+  <meta property="og:url" content="https://sebastiandlacruz.github.io/Portafolio/">
+  <meta property="og:site_name" content="Portafolio de Sebastián de la Cruz">
+  <meta property="og:locale" content="es_AR">
+
+  <!-- Imagen para previsualización (WhatsApp suele requerir que la imagen pese < 300KB) -->
+  <meta property="og:image" content="https://sebastiandlacruz.github.io/Portafolio/imagen-portada.jpg">
+  <meta property="og:image:secure_url" content="https://sebastiandlacruz.github.io/Portafolio/imagen-portada.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Imagen de portada del portafolio">
+
+  <!-- ==============================================
+         Twitter Cards (Twitter / X y Discord)
+         ============================================== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sebastián de la Cruz | Desarrollador Frontend">
+  <meta name="twitter:description"
+    content="Me enfoco en crear soluciones escalables e interfaces accesibles. ¡Conoce mi trabajo y experiencia!">
+  <meta name="twitter:image" content="https://sebastiandlacruz.github.io/Portafolio/imagen-portada.jpg">
+
+  <!-- ==============================================
+         Fuentes
+         ============================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<body>
+  <!-- ==============================================
+         Cursor Animado Personalizado (GSAP)
+         ============================================== -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <div id="three-js-background"></div>
+
+  <!-- ==============================================
+         Orbes Animados Fluidos de Fondo
+         ============================================== -->
+
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- Enlace de accesibilidad para saltar directamente al contenido principal -->
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Cabecera principal de la tarjeta personal -->
+  <header class="hero-section text-center">
+    <div class="hero-text-content">
+      <h1 class="hero-title">Sebastián de la Cruz</h1>
+      <h2 class="hero-subtitle">Desarrollador Frontend</h2>
+    </div>
+  </header>
+
+  <!-- Menú de navegación accesible y responsivo -->
+  <nav aria-label="Menú principal" id="main-nav">
+    <div class="nav-header">
+      <div class="nav-brand">
+        <i class='bx bx-planet'></i>
+        <span class="brand-text">SC<span>.dev</span></span>
+      </div>
+      <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-label="Abrir menú de navegación">
+        <i class='bx bx-menu'></i>
+      </button>
+    </div>
+    <ul id="nav-list">
+      <li><a href="#extracto" class="nav-link"><i class='bx bx-user'></i> <span>Sobre Mi</span></a></li>
+      <li><a href="#aptitudes" class="nav-link"><i class='bx bx-code-alt'></i> <span>Aptitudes</span></a></li>
+      <li><a href="#experiencia" class="nav-link"><i class='bx bx-briefcase'></i> <span>Experiencia</span></a></li>
+      <li><a href="#proyectos" class="nav-link"><i class='bx bx-rocket'></i> <span>Proyectos</span></a></li>
+      <li><a href="#educacion" class="nav-link"><i class='bx bx-book-open'></i> <span>Educación</span></a></li>
+      <li><a href="#contacto" class="nav-link"><i class='bx bx-envelope'></i> <span>Contacto</span></a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenedor del contenido principal de la página -->
+  <main id="contenido-principal">
+
+    <div class="hero-grid">
+      <!-- Sección de Resumen Personal -->
+      <section id="extracto" aria-labelledby="extracto-titulo" class="card-glass" data-aos="fade-right">
+        <h2 id="extracto-titulo"><i class='bx bx-user-circle'></i> Sobre Mi</h2>
+        <p>Soy desarrollador especializado en frontend con Angular (RxJS, NgRx) y React, y en backend con NestJS y
+          Node.js. Me enfoco en crear soluciones escalables, accesibles y bien estructuradas, integrando APIs REST y
+          aplicando buenas prácticas de arquitectura. Me apasiona el trabajo en equipo, la mejora continua y la
+          construcción de experiencias robustas que generen valor real.</p>
+      </section>
+
+      <!-- Sección de Habilidades -->
+      <section id="aptitudes" aria-labelledby="aptitudes-titulo" class="card-glass" data-aos="fade-left">
+        <h2 id="aptitudes-titulo"><i class='bx bx-code-alt'></i> Aptitudes</h2>
+        <ul>
+          <li>JavaScript y TypeScript</li>
+          <li>Angular (RxJS, NgRx)</li>
+          <li>React y Next.js</li>
+          <li>Node.js y NestJS</li>
+          <li>Redux.js</li>
+          <li>React Flow</li>
+          <li>Claude Code</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Sección de Experiencia Laboral -->
+    <section id="experiencia" aria-labelledby="experiencia-titulo">
+      <h2 id="experiencia-titulo"><i class='bx bx-briefcase'></i> Experiencia Profesional</h2>
+
+      <div class="cards-grid">
+        <article data-aos="fade-up">
+          <h3>Desarrollador de JavaScript en Tecnosoftware</h3>
+          <p><strong>Período:</strong> noviembre de 2025 - Presente</p>
+          <p><strong>Ubicación:</strong> Provincia de Buenos Aires, Argentina</p>
+          <p><strong>Cliente:</strong> Credicoop</p>
+        </article>
+
+        <article data-aos="fade-up" data-aos-delay="100">
+          <h3>Frontend Developer Angular en LinkTIC</h3>
+          <p><strong>Período:</strong> octubre 2023 - diciembre 2024</p>
+          <ul>
+            <li>Desarrollo de apps escalables tipo trazabilidad utilizando Angular, NgRx y Azure DevOps.</li>
+            <li>Resolución de bugs críticos mejorando fuertemente la estabilidad.</li>
+            <li>Optimización de rendimiento mediante lazy loading y rutas por rol.</li>
+            <li>Refactorización de interfaces accesibles.</li>
+          </ul>
+        </article>
+
+        <article data-aos="fade-up" data-aos-delay="200">
+          <h3>Desarrollador Frontend en UNB Collections</h3>
+          <p><strong>Período:</strong> enero 2023 - septiembre 2023</p>
+
+          <section aria-labelledby="medical-plus-titulo">
+            <h4 id="medical-plus-titulo">Medical Plus Chile</h4>
+            <ul>
+              <li>Rediseño integral del sitio enfocado a UX y conversión.</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="figma-titulo" style="margin-top: 1rem;">
+            <h4 id="figma-titulo">Logística y Figma</h4>
+            <p>Participé activamente creando interfaces desde wireframes y plataformas a medida para gestión de la
+              distribución.</p>
+          </section>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección de Trabajo Autónomo y Proyectos -->
+    <section id="proyectos" aria-labelledby="proyectos-titulo">
+      <h2 id="proyectos-titulo"><i class='bx bx-rocket'></i> Proyectos Destacados</h2>
+
+      <div class="card-glass mb-md" data-aos="fade-in">
+        <p><strong>Rol:</strong> Desarrollador frontend | <strong>Período:</strong> marzo 2021 - mayo 2023</p>
+        <p>Me especializo en HTML, CSS, JavaScript, React y Next.js. He participado en proyectos colaborativos aplicando
+          y ampliando mis dotes técnicos y analíticos:</p>
+      </div>
+
+      <div class="cards-grid columns-3">
+        <article data-aos="zoom-in" class="project-card">
+          <h3><i class='bx bx-game'></i> GOTO GAME JAM</h3>
+          <p>Colaboración web en Astro y Sass, integrando nuevas secciones y optimizando videos embebidos de ediciones
+            anteriores para la experiencia gamer.</p>
+        </article>
+
+        <article data-aos="zoom-in" data-aos-delay="100" class="project-card">
+          <h3><i class='bx bx-planet'></i> Conovatec</h3>
+          <p>Mantenimiento y creación de web para observatorio en Perú. Amplié experiencia usando de base TypeScript,
+            Next.js y Chakra UI.</p>
+        </article>
+
+        <article data-aos="zoom-in" data-aos-delay="200" class="project-card">
+          <h3><i class='bx bx-restaurant'></i> No Country</h3>
+          <p>Lideré frontend de simulador de carta digital para restaurantes, integrando el equipo de trabajo en flujo
+            profesional y desarrollo ágil.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección de Educación -->
+    <section id="educacion" aria-labelledby="educacion-titulo">
+      <h2 id="educacion-titulo"><i class='bx bx-book-open'></i> Educación</h2>
+      <article class="text-center" data-aos="flip-up">
+        <h3>Universidad Tecnológica Nacional (UTN)</h3>
+        <p><strong>Titulación:</strong> Tecnicatura Superior en Programación</p>
+        <p><strong>Período:</strong> Agosto de 2020 - 2025</p>
+      </article>
+    </section>
+
+    <!-- Sección de Datos de Contacto y Formulario -->
+    <section id="contacto" aria-labelledby="contacto-titulo" data-aos="fade-up">
+      <h2 id="contacto-titulo"><i class='bx bx-envelope'></i> Contacto</h2>
+
+      <div class="contacto-wrapper">
+        <address class="contacto-info">
+          <h3>Hablemos</h3>
+          <p>Puedes contactarme a través de los siguientes medios:</p>
+          <ul>
+            <li><i class='bx bx-mobile-alt'></i> <strong>Teléfono:</strong> <a href="tel:+5491559236366">1559236366</a>
+            </li>
+            <li><i class='bx bx-envelope'></i> <strong>Email:</strong> <a
+                href="mailto:sebastiandelacruz335@gmail.com">sebastiandelacruz335@gmail.com</a></li>
+            <li><i class='bx bxl-linkedin-square'></i> <strong>LinkedIn:</strong> <a
+                href="https://www.linkedin.com/in/sebastian-dela-cruz" target="_blank" rel="noopener noreferrer">Perfil
+                Oficial</a></li>
+          </ul>
+        </address>
+
+        <!-- Formulario de contacto -->
+        <form action="#" method="POST" class="contacto-form">
+          <h3>Envíame un mensaje</h3>
+          <fieldset>
+            <div>
+              <label for="name"><i class='bx bx-user'></i> Nombre completo</label>
+              <input type="text" id="nombre" name="name" required minlength="3" maxlength="50"
+                pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$" title="El nombre solo debe contener letras."
+                placeholder="Ej: Juan Pérez">
+            </div>
+
+            <div>
+              <label for="email"><i class='bx bx-at'></i> Correo electrónico</label>
+              <input type="email" id="email" name="email" required placeholder="tu@email.com"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                title="Por favor, ingresa un correo electrónico válido (ej: nombre@dominio.com)">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div>
+              <label for="asunto"><i class='bx bx-message-rounded-dots'></i> Asunto</label>
+              <input type="text" id="asunto" name="title" required minlength="5" maxlength="100"
+                placeholder="Motivo de tu mensaje">
+            </div>
+
+            <div>
+              <label for="mensaje"><i class='bx bx-text'></i> Mensaje</label>
+              <textarea id="mensaje" name="message" rows="5" required minlength="20" maxlength="1000"
+                placeholder="Escribe aquí tu mensaje (mín. 20 caracteres)..."></textarea>
+            </div>
+          </fieldset>
+
+          <button type="submit"><i class='bx bx-send'></i> Enviar Mensaje</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de página de la web -->
+  <footer>
+    <p>&copy; 2026 Sebastián de la Cruz - Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- ==============================================
+         Script Principal (Modulo Vite)
+         ============================================== -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
